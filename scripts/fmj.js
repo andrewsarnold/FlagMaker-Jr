@@ -194,3 +194,11 @@ function exportSvg() {
 	pom.setAttribute("download", "flag.svg");
 	pom.click();
 }
+
+/*
+// Workaround to solve SVG breaking due to character "#". 
+*/
+var hrefValue = pom.getAttribute("href");
+var regex = new RegExp("#", 'g');
+hrefValue = hrefValue.replace(regex, "%23");
+pom.setAttribute("href", hrefValue);

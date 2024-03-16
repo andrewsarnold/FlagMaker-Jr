@@ -16,12 +16,12 @@
         // Options
         color: false,
         flat: false,
-        showInput: false,
+        showInput: true,
         allowEmpty: false,
         showButtons: true,
         clickoutFiresChange: false,
         showInitial: false,
-        showPalette: false,
+        showPalette: true,
         showPaletteOnly: false,
         showSelectionPalette: true,
         localStorageKey: false,
@@ -30,7 +30,7 @@
         cancelText: "cancel",
         chooseText: "choose",
         clearText: "Clear Color Selection",
-        preferredFormat: false,
+        preferredFormat: hex,
         className: "", // Deprecated - use containerClassName and replacerClassName instead.
         containerClassName: "",
         replacerClassName: "",
